@@ -107,6 +107,8 @@
         gapi.client.plus.people.get({
           'userId' : 'me'
         }).execute(function(resp) {
+          console.log('[API google.plus.people.get] success!!');
+          console.log(resp);
           p.appendChild(document.createTextNode('ID: ' + resp.id));
           p.appendChild(document.createTextNode('Display Name: ' + resp.displayName));
           p.appendChild(document.createTextNode('Image URL: ' + resp.image.url));
